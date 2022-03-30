@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family-Outifit:wght0300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --vdb: hsl(217, 54%, 11%);
+  --vdb-2: hsl(216, 50%, 16%);
+}
+body {
+  font-family: "Outifit", sans-serif;
+  background-color: var(--vdb);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 21.875rem;
+}
+.wrapper {
+  margin: 2rem 1rem;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: var(--vdb-2);
+}
+.hero-img {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.hero-img img {
+  width: 100%;
+  display: block;
+  transition: 0.3s linear ease-in-out;
+}
+.hero-overlay {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.hero-overlay img {
+  position: absolute;
+  width: 3.125rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-img:hover .hero-overlay {
+  display: block;
+}
+.info-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  transition: 0.3s linear ease-in-out;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.info-text a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.info-text p {
+  line-height: 1.2;
+  color: hsl(215, 51%, 70%);
+}
+.flex-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.25rem 0;
+}
+.eth,
+.time {
+  display: flex;
+  align-items: center;
+}
+.eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  margin-left: 0.4rem;
+}
+.time p {
+  margin-left: 0.4rem;
+}
+.hr {
+  border-color: hsl(215, 32%, 27%);
+}
+footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+footer img {
+  width: 1.75rem;
+  height: 1.75rem;
+  justify-self: flex-start;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+footer p {
+  margin-left: 0.5rem;
+  color: hsl(215, 51%, 70%);
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: hsl(178, 100%, 50%);
+}
